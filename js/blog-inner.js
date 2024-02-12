@@ -202,10 +202,14 @@ function easeOutQuad(t) {
 
 const button = document.getElementById("applause");
 
-button.initialClapCount.then(function(count) {
-    console.log("initial clap count", count);
-});
+if (button) {
+    button.initialClapCount.then(function(count) {
+        console.log("initial clap count", count);
+    });
 
-button.addEventListener("clapped", function(event) {
-    console.log("button clapped", event.detail);
-});
+    button.addEventListener("clapped", function(event) {
+        console.log("button clapped", event.detail);
+    });
+} else {
+    //console.error("Element with id 'applause' not found. Unable to initialize.");
+}
