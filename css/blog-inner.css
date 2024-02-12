@@ -1,0 +1,222 @@
+
+/**Styles for github gists*/
+@media (max-width: 479px) {
+    blockquote {
+        max-width: 320px;
+        overflow: auto;
+    }
+    .gist-p {max-width:320px; overflow:auto}
+    .gist .file-data {max-height: 500px;max-width: 320px;}
+}
+
+/* More customizations https://codersblock.com/blog/customizing-github-gists */
+/* Remove the "Made with Love" */
+body .gist .gist-meta {
+    display: none;
+}
+
+/* Increase saturation and decrease brightnes for better readability */
+body .gist .blob-code {
+    filter: brightness(70%) contrast(160%) saturate(150%);
+}
+
+
+.count {
+    color:#00949E !important;
+    margin-top:-16px !important;
+    font-size:14px !important;
+}
+
+.w-richtext h2{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    scroll-padding-top: 80px;
+}
+
+.w-richtext h3 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.w-richtext p{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.w-richtext a{
+    color: #00F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.w-richtext p,
+.w-richtext h2,
+.w-richtext h3,
+.w-richtext h4,
+.w-richtext h5{
+    padding: 0 40px;
+}
+.w-richtext ul,
+.w-richtext ol{
+    padding: 0 40px 0 60px;
+}
+
+
+@media (max-width: 768px) {
+    .w-richtext ul {
+        padding: 0 40px 0 60px;
+    }
+
+    .w-richtext p,
+    .w-richtext h2,
+    .w-richtext h3,
+    .w-richtext h4,
+    .w-richtext h5,
+    .w-richtext ul{
+        padding: 0;
+    }
+    .w-richtext ul{
+        padding-left: 20px;
+    }
+}
+
+.w-richtext li{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+
+.w-richtext figure{
+    width: 100%;
+    max-width: 100%;
+    margin: 40px 0;
+}
+.w-richtext figure div {
+    width: 100%;
+    max-width: 100%;
+}
+
+.guide-list li{
+    list-style-type: none;
+    padding: 8px;
+    border-left: 1px solid #E3E4EC;
+}
+.guide-list li div{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    color: #575757;
+    cursor: pointer;
+}
+
+.guide-list li.active{
+    border-left: 1px solid #00F;
+}
+
+.guide-list li.active div{
+    color: #161616;
+}
+
+
+.accordion-header.active .icon-plus{
+    display: none;
+}
+.blog-author{
+}
+
+.text-colored{
+    color: #f25f24;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(89deg, #8000FF 0.93%, #4200FF 99.07%);
+    -webkit-background-clip: text;
+}
+
+.guide-table{
+    width: 90%;
+    margin: 0 auto 40px;
+}
+.guide-table-item{
+    border: 1px solid #ddd;
+}
+table td, table th{
+//border: 1px #ddd;
+// border-style: none solid;
+// padding: 10px;
+}
+
+.guide-table-title.guide-table-title-bold {
+    font-weight: 600;
+}
+
+.guide-table-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.guide-table-text a {
+    color: #00F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.blog-author{
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.blog-author::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid;
+    border-image: linear-gradient(89deg, #8000FF 0.93%, #66FEFF 99.07%);
+    border-image-slice: 1;
+    border-radius: 4px;
+    z-index: -1;
+}
+
+.w-embed.w-script {
+    max-width: 700px;
+    width: 100%;
+    padding: 0 40px;
+}
+@media (max-width: 768px) {
+    .w-embed.w-script {
+        max-width: 500px;
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+@media (max-width: 550px) {
+    .w-embed.w-script {
+        max-width: 350px;
+        width: 100%;
+    }
+}
+
+.gist .blob-wrapper table{
+    width: 100%
+}
+.gist .blob-wrapper > div {
+    width: 100%;
+}
